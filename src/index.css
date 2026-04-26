@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --orange: #f97316;
+  --orange-dark: #ea580c;
+  --blue: #1e40af;
+  --blue-light: #3b82f6;
+  --teal: #0d9488;
+  --dark: #0f172a;
+  --dark-2: #1e293b;
+  --mid: #475569;
+  --light: #f8fafc;
+  --white: #ffffff;
+  --border: #e2e8f0;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); color: var(--dark); background: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: var(--font-sans); }
+img { max-width: 100%; display: block; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes shimmer { 0% { background-position: -400px 0; } 100% { background-position: 400px 0; } }
+@keyframes floatUp { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
